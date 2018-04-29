@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NumbersBecameFun</string>
+    <string name="titleAcerto">É isso aí!</string>
+    <string name="msgAcerto">Parabéns! Você acertou!</string>
+    <string name="titleErro">Ah não!</string>
+    <string name="msgErro">Poxa, você errou! \n A opção correta era </string>
+    <string name="btnOk">Continuar</string>
+</resources>
