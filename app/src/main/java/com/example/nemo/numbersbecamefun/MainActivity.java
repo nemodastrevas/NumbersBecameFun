@@ -10,6 +10,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    static int jogoAtual;
     ListView list;
     String[] jogo = {"NumberZoo", "Equations", "The Biggest Number"};
     Integer[] imageId = {R.drawable.numberzoo2,R.drawable.equations,R.drawable.thebiggestnumber};
@@ -38,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(it);
                 }
                 else if (i == 2){
-                    Intent it = new Intent(MainActivity.this, TelaZooActivity.class);
+                    Intent it = new Intent(MainActivity.this, TelaBiggestNumberActivity.class);
                     startActivity(it);
                 }
                 else

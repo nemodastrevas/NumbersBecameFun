@@ -51,7 +51,15 @@ public class ResultadoActivity extends AppCompatActivity {
         btnJogar.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent it = new Intent(ResultadoActivity.this, TelaZooActivity.class);
+                Intent it;
+                if(MainActivity.jogoAtual == 1){
+                    it = new Intent(ResultadoActivity.this, TelaZooActivity.class);
+                }else if(MainActivity.jogoAtual == 2){
+                    it = new Intent(ResultadoActivity.this, TelaZooActivity.class);
+                }else{
+                    it = new Intent(ResultadoActivity.this, TelaBiggestNumberActivity.class);
+                }
+
                 startActivity(it);
             }
         });
