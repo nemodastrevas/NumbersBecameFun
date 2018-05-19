@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(it);
                 }
                 else if (i == 1){
-                    Intent it = new Intent(MainActivity.this, TelaZooActivity.class);
+                    Intent it = new Intent(MainActivity.this, EquationsActivity.class);
                     startActivity(it);
                 }
                 else if (i == 2){

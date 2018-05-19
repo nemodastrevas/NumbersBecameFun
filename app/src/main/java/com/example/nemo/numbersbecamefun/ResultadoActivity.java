@@ -55,7 +55,7 @@ public class ResultadoActivity extends AppCompatActivity {
                 if(MainActivity.jogoAtual == 1){
                     it = new Intent(ResultadoActivity.this, TelaZooActivity.class);
                 }else if(MainActivity.jogoAtual == 2){
-                    it = new Intent(ResultadoActivity.this, TelaZooActivity.class);
+                    it = new Intent(ResultadoActivity.this, EquationsActivity.class);
                 }else{
                     it = new Intent(ResultadoActivity.this, TelaBiggestNumberActivity.class);
                 }

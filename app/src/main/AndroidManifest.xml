@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".TelaZooActivity" />
         <activity android:name=".ResultadoActivity" />
-        <activity android:name=".TelaBiggestNumberActivity"></activity>
+        <activity android:name=".TelaBiggestNumberActivity" />
+        <activity android:name=".EquationsActivity"></activity>
     </application>
 
 </manifest>
