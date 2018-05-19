@@ -17,7 +17,6 @@ import java.util.Random;
 
 public class TelaZooActivity extends AppCompatActivity {
 
-
     ArrayList<TelaZoo> mapa = new ArrayList<TelaZoo>();
     Button    btnOp1;
     Button    btnOp2;
@@ -31,6 +30,7 @@ public class TelaZooActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_telazoo);
+        MainActivity.jogoAtual = 1;
         btnOp1 =    (Button)    findViewById(R.id.btnOp1);
         btnOp2 =    (Button)    findViewById(R.id.btnOp2);
         btnOp3 =    (Button)    findViewById(R.id.btnOp3);

@@ -1,9 +1,78 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.nemo.numbersbecamefun.TelaBiggestNumberActivity">
 
-</android.support.constraint.ConstraintLayout>
+
+    <EditText
+        android:id="@+id/ePergunta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:focusable="false"
+        android:textStyle="bold"
+        android:singleLine="false"
+        android:inputType="textMultiLine"
+        />
+
+    <ImageView
+        android:id="@+id/imgNum"
+        android:layout_width="match_parent"
+        android:layout_height="462dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/ePergunta"
+        android:src="@drawable/numeros"
+        android:alpha="0.2"/>
+
+    <TextView
+        android:id="@+id/alg2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ePergunta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/alg3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/alg2"
+        android:layout_alignBottom="@+id/alg2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="52dp"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/alg1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/alg2"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:textSize="35sp" />
+
+    <Button
+        android:id="@+id/btnOp1"
+        android:layout_width="121dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Confirmar" />
+
+    <EditText
+        android:id="@+id/resposta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnOp1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="72dp"
+        android:ems="10"
+        android:inputType="numberSigned" />
+
+</android.widget.RelativeLayout>
